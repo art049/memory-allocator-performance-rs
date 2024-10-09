@@ -1,5 +1,6 @@
 #![feature(allocator_api)]
-
+/// Strongly inspired by:
+/// https://github.com/daanx/mimalloc-bench/tree/master/bench/malloc-large
 use bumpalo::Bump;
 use criterion::{criterion_group, criterion_main, Criterion};
 use memory_allocator_performance_rs::{GlibcMallocAllocator, JemallocAllocator, MiMallocAllocator};

@@ -1,5 +1,6 @@
 #![feature(allocator_api)]
-
+/// Strongly inspired by the glibc malloc benchmarks
+/// https://github.com/bminor/glibc/tree/master/benchtests
 use bumpalo::Bump;
 use criterion::{black_box, criterion_group, criterion_main, BenchmarkId, Criterion};
 use memory_allocator_performance_rs::{GlibcMallocAllocator, JemallocAllocator, MiMallocAllocator};
